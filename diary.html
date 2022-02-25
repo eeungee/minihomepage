@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/font.css">
+  <link rel="stylesheet" href="style/layout.css">
+  <link rel="stylesheet" href="style/diary.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/331d195d9d.js" crossorigin="anonymous"></script>
+  <title>2021 MINI HOMEPAGE</title>
+</head>
+<body>
+  <div class="bookcover">
+    <div class="bookdot">
+      <div class="page">
+        <div class="side-bar">
+          <p>TODAY <span class="todayNum">230</span> | TOTAL 657845</p>
+          <div class="info-box">
+            <div class="profile_img">
+              <img src="images/profile_img.jpg" />
+            </div>
+            <div class="self-info">코린이 탈출하기😋 </div>
+            <p class="name">eeeungeee</p>
+            <div class="left-page-dropdown">
+              <select name="surfing" class="surfing">
+                <option value="none">파도타기</option>
+                <option value="코뮤니티로 가기"><a href="https://cafe.naver.com/codeuniv"></a>코뮤니티로 가기</option>
+                <option value="인스타그램으로 가기"><a href="http://www.instagram.com/coding_comu/"></a>인스타그램으로 가기</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <p>개발자의 미니홈피</p>
+          <div class="main_room">
+            <div class="top-day">
+              <div class="date">02.21 <br> TUE</div>
+              <div class="calender">
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day blue">5</div>
+                <div class="day red">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day blue">12</div>
+                <div class="day red">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day blue">19</div>
+                <div class="day red">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day blue">26</div>
+                <div class="day red">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div> 
+              </div>
+            </div>
+            <div class="diary">
+              <div class="content">
+                <p class="content_title">
+                  2022.02.21 월 22:13
+                </p>
+                <p class="diary_content">
+                  열심히 싸이월드를 만들고있다. <br>
+                  잊었던 기억들이 많이 생각났다. <br>
+                  그간 많이 공부했다고 생각했는데, 내 실력이 조금 실망했다. <br>
+                  그래도 지치지 않고 더 열심히 해야겠다. <br><br> 
+                  가 보 자 고 !! 
+                </p>
+              </div>
+              <div class="content">
+                <p class="content_title">
+                  2022.02.23 수 10:55
+                </p>
+                <p class="diary_content">
+                  TVING으로 여고추리반을 봤다. <br>
+                  여추반1도 재밌게 봤는데, 여추반2도 너무 재밌었다.<br>
+                  믿고 보는 정종연 <br>
+                  여추반3도 빨리 나왔으면 좋겠다 :)
+                </p>
+              </div> 
+              <div class="content">
+                <p class="content_title">
+                  2022.02.25 금 22:58
+                </p>
+                <p class="diary_content">
+                  한달 평일은 매일 코딩을 했다. <br>
+                  이걸 할 수 있을까 싶었는데, 성공했다. <br>
+                  너무 뿌듯하다 ! <br><br>
+                  실력이 엄청 뛰어나진 않아도, 매일 이렇게 한다면
+                  습관이 될 것 같다.
+                </p>
+              </div>
+              <div class="button-box">
+                <button class="diary-button font-neo" onclick="getTextFile()">
+                  <i class="fas fa-lock"></i> SECRET DIARY
+                </button>
+              </div>
+              <div class="content" id="secret-box">
+                <div class="content_title">비밀일기</div>
+                <div class="diary_content" id="secret-diary"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+           <div class="right_menu"><a href="main.html">홈</a></div>
+           <div class="right_menu"><a href="diary.html">다이어리</a></div>
+           <div class="right_menu"><a href="photo.html">사진첩</a></div>
+           <div class="right_menu"><a href="guestbook.html">방명록</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  function getTextFile() {
+    var input = document.createElement("input");
+    input.type = "file";
+    input.accept = "text/plain";
+    input.onchange = function (event) {
+      processFile(event.target.files[0]);
+    };
+    input.click();
+  }
+
+  function processFile(file) {
+    var reader = new FileReader();
+    reader.readAsText(file, "utf-8");
+
+    reader.onload = function () {
+      document.getElementById("secret-diary").innerText = reader.result;
+      document.getElementById("secret-box").style.display = "block";
+    };
+  }
+  </script>
+</body>
+</html>

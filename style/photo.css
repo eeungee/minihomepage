@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.photo_room {
+  width: 500px;
+  height: 520px;
+  margin: 10px auto 0;
+  overflow: auto;
+}
+
+.photos {
+  height: 380px;
+}
+
+.photos > p {
+  padding-left: 10px;
+}
+
+.photo_title {
+  background-color: #d5d5d5;
+  font-weight: 580;
+}
+
+.each_photo {
+  margin: 10px auto 0;
+  width: 470px;
+  padding-bottom: 15px;
+}
+
+.each_photo > img {
+  width: 470px;
+}

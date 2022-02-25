@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top-day {
+  display: flex;
+  width: 500px;
+  height: 55px;
+  border: 1px solid lightgray;
+  margin: 15px auto;
+}
+
+.date {
+  text-align: center;
+  width: 60px;
+  font-weight: 600;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.calender {
+  display: flex;
+  flex-wrap: wrap;
+  width: 440px;
+  font-weight: 600;
+  color: gray;
+}
+
+.day {
+  width: 23px;
+  font-size: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+.diary {
+  width: 500px;
+  height: 420px;
+  margin: 30px auto 0;
+  overflow-y: scroll;
+}
+
+.content {
+  width: 480px;
+  height: 300px;
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+}
+
+.content_title {
+  padding: 18px;
+  color: #4abfd3;
+  font-size: 14px;
+}
+
+.diary_content {
+  padding: 18px;
+}
+
+.button-box {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.diary-button {
+  width: 180px;
+  height: 35px;
+  text-align: center;
+  background-color: white;
+  color: white;
+  line-height: 35px;
+  transition: 700ms ease all;
+  font-weight: 580;
+  font-size: 16px;
+  border: none;
+}
+
+.diary-button:hover {
+  background-color: purple;
+  cursor: pointer;
+}
+
+.fas {
+  color: white;
+  margin-right: 15px;
+}
+
+#secret-box {
+  display: none;
+}

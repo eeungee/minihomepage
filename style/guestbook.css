@@ -1,0 +1,65 @@
+.guestbook {
+  width: 500px;
+  height: 510px;
+  margin: 15px auto;
+  overflow: hidden auto;
+}
+
+.each-book {
+  margin-bottom: 40px;
+}
+
+.date-time {
+  background-color: #eaeaea;
+  padding: 3px 0 3px 20px;
+  align-items: center;
+}
+
+.date-time > p {
+  font-size: 15px;
+}
+
+.blue {
+  color: #0000db;
+}
+
+.fa-solid {
+  font-size: 13px;
+}
+
+.guestbook-content {
+  width: 500px;
+  height: 170px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.guestbook-image {
+  flex: 0 0 8rem;
+  height: 8rem;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-1 {
+  background-image: url("../images/sky_bg2.jpg");
+}
+
+.background-2 {
+  background-image: url("../images/bg3.jpg");
+}
+
+.background-3 {
+  background-image: url("../images/sky_bg.jpg");
+}
+
+.guestbook-image > img {
+  width: 70%;
+}
+
+.guestbook-write {
+  margin: 0 20px;
+}

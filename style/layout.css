@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("images/pattern.png");
+  /* body 에 배경이미지 적용 */
+  background-size: 100px;
+  background-color: #a3a3a3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.bookcover {
+  width: 960px;
+  height: 660px;
+  background-color: #b4d1da;
+  border: 1px solid #738186;
+  border-radius: 9px;
+  margin: 130px auto;
+  position: relative;
+}
+
+.bookdot {
+  width: 935px;
+  height: 635px;
+  border: 1.3px dashed white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 9px;
+}
+
+.page {
+  width: 915px;
+  height: 615px;
+  background-color: #f6f6f6;
+  border-radius: 9px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+}
+
+.side-bar {
+  width: 230px;
+  margin: 13px 20px 10px 15px;
+}
+
+.side-bar > p {
+  text-align: center;
+  margin: 10px;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.todayNum {
+  color: red;
+}
+
+.info-box {
+  background: white;
+  border-radius: 9px;
+  height: 540px;
+  border: 1px solid #d5d5d5;
+}
+
+.profile_img {
+  width: 180px;
+  height: 180px;
+  margin: 30px auto;
+}
+
+.profile_img > img {
+  width: 180px;
+  height: 180px;
+}
+
+.self-info {
+  width: 180px;
+  height: 40%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+.name {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.surfing {
+  margin-left: 20px;
+  background-color: #eaeaea;
+}
+
+.main {
+  width: 530px;
+  border-radius: 9px;
+  height: 92%;
+  margin: 13px 0 13px 15px;
+}
+
+.main > p {
+  margin: 9px;
+  font-weight: 700;
+}
+
+.main_room {
+  border-radius: 9px;
+  height: 540px;
+  border: 1px solid #d5d5d5;
+  background: white;
+}
+
+.menu {
+  width: 80px;
+  margin-top: 80px;
+}
+
+.right_menu {
+  background-color: #5586eb;
+  color: white;
+  width: 80px;
+  height: 30px;
+  font-weight: 500;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.right_menu:hover {
+  background-color: #8bbcff;
+}
